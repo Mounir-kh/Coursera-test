@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+}
+
+main{
+    display: flex;
+    height: 100%;
+}
+.container{
+    margin: 10px 10px 10px 10px;
+    border: solid black 2px;
+    clear: right;
+    overflow: hidden;
+    
+}
+p{
+    padding: 10px 10px 10px 10px;
+    clear: right;
+    font-size: 10px;
+}
+span{
+    border: solid black 1px ;
+    padding: 10px;
+    float: right;
+    clear: left;
+    margin: 0px;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+}
+.chicken >span{
+    background-color: rgb(180, 143, 143);
+}
+
+.beef >span{
+    background-color: rgb(236, 55, 55);
+    color: white;
+}
+.sushi >span{
+    background-color: rgb(93, 164, 93);
+}
+
+/*Tablet View*/
+
+@media screen and (min-width:768px) and (max-width:991px){
+   .sushi{
+    justify-self:flex-end;
+    position: absolute;
+    margin-top: 200px;
+
+   }
+}
+
+/*Mobile view*/
+@media screen and (max-width:767px){
+    main{
+        flex-direction: column;
+    }
+
+}
